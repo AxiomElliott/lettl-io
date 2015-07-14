@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Website for Elliott Thompson">
     <meta name="author" content="Elliott Thompson">
+    <base href="/">
     <title>Elliott Thompson</title>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
     <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/banner.css" />
   </head>
   <body>
+    <div ng-include="'partials/banner.html'"></div>
     <div class="container">
-    <div ng-view></div>
+      <div ng-view></div>
     </div>
       <script src="bower_components/jquery/dist/jquery.js"></script>
       <script src="bower_components/angular/angular.js"></script>
@@ -23,5 +26,6 @@
       <script src="bower_components/angular-animate/angular-animate.js"></script>
       <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
       <script src="js/main.js"></script>
+      <script src="js/banner.js"></script>
   </body>
 </html>

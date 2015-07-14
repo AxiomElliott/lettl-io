@@ -14,9 +14,15 @@
           templateUrl:"./partials/home.html",
           controller:"HomeController"
         })
+        .when("/contact", {
+          templateUrl:"./partials/contact.html",
+          controller:"ContactController"
+        })
         .otherwise({
           redirectTo: '/'
         });
+
+        $locationProvider.html5Mode(true);
     }
   ]);
 
@@ -24,8 +30,15 @@
   angular.module('SampleApp').controller('HomeController', [
     '$scope',
     function($scope) {
-      $scope.test = "Testing...";
-      console.log("this fired");
+      $scope.test = "Testing ※ Hello";
+    }
+  ]);
+
+  // home controller
+  angular.module('SampleApp').controller('ContactController', [
+    '$scope',
+    function($scope) {
+      $scope.test = "Contact Me!";
     }
   ]);
 

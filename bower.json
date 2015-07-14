@@ -1,0 +1,28 @@
+{
+  "name": "lettl",
+  "version": "0.0.0",
+  "authors": [
+    "Elliott Thompson <ellth92@gmail.com>"
+  ],
+  "description": "Website for Elliott Thompson",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://lettl.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.2",
+    "angular-animate": "~1.4.2",
+    "angular-route": "~1.4.2",
+    "jquery": "~2.1.4",
+    "animate.css": "~3.3.0",
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.3.0",
+    "requirejs": "~2.1.19"
+  }
+}
