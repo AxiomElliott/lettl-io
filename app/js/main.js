@@ -1,8 +1,6 @@
-(function(){
+var mainjs = function(){
 
-'use strict';
-
-  angular.module('SampleApp', ['ngRoute', 'ngAnimate'])
+angular.module('SampleApp', ['ngRoute', 'ngAnimate'])
 
   .config([
     '$locationProvider',
@@ -26,6 +24,7 @@
     }
   ]);
 
+
   // home controller
   angular.module('SampleApp').controller('HomeController', [
     '$scope',
@@ -34,12 +33,11 @@
     }
   ]);
 
-  // home controller
+  // contact controller
   angular.module('SampleApp').controller('ContactController', [
     '$scope',
     function($scope) {
       $scope.test = "Contact Me!";
     }
   ]);
-
-}());
+};
