@@ -5,28 +5,40 @@
   background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Droid Sans Mono';
-  font-size: 30px;
+  font-family: 'Lobster', Helvetica, Arial, sans-serif;
+  font-size: 50px;
   text-align: center;
-  width:30px;
+  top: 50%;
+  transform: translateY(-50%);
+  letter-spacing: 10px;
+}
+
+.nav li{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .nav {
   font-size = 15px;
-  font-family: 'calluna-sans';
+  font-family: 'Cabin';
   margin: 0 auto;
   width: 400px;
-  height:40px;
+  height: 100px;
   text-align: center;
 }
+
 .bannercontainer {
-  width:480px;
-  height:50px;
+  display:inline-block;
+  height:200px;
   margin: 0 auto;
 }
 
 .huechange {
   -webkit-animation: hue 120s infinite linear;
+}
+
+.huechange:hover {
+  -webkit-animation: hue 3s infinite linear;
 }
 
 @-webkit-keyframes hue {

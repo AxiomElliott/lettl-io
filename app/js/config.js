@@ -3,13 +3,13 @@ requirejs.config({
   baseUrl: './js',
   paths: {
     'angular': 'vendor/angular/angular',
-    'angular-animate': 'vendor/angular-animate/angular-animate',
+    // 'angular-animate': 'vendor/angular-animate/angular-animate',
     'angular-route': 'vendor/angular-route/angular-route',
     'jquery': 'vendor/jquery/dist/jquery',
     'bootstrap': 'vendor/bootstrap/dist/js/bootstrap',
   },
   shim: {
-    'bundle': {deps:['angular', 'angular-route', 'angular-animate']},
+    'bundle': {deps:['angular', 'angular-route']},
     'angular-route':{deps:['angular'], exports:'angular'},
     'angular-animate':{deps:['angular'], exports:'angular'},
     'angular':{deps:['jquery'], exports:'angular'},

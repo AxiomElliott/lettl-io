@@ -1,6 +1,6 @@
 var mainjs = function(){
 
-angular.module('SampleApp', ['ngRoute', 'ngAnimate'])
+angular.module('SampleApp', ['ngRoute'])
 
   .config([
     '$locationProvider',
