@@ -34,7 +34,7 @@
 }
 
 .huechange {
-  -webkit-animation: hue 120s infinite linear;
+  -webkit-animation: hue 115s infinite linear;
 }
 
 .huechange:hover {
