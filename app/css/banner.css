@@ -1,36 +1,28 @@
 .char {
-  position:relative;
-  float:left;
   color: #f35626;
-  background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+  background-image: -webkit-linear-gradient(92deg,#2672f4,#3ae0fe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Lobster', Helvetica, Arial, sans-serif;
+  font-family: 'Bitter', Helvetica, Arial, sans-serif;
   font-size: 50px;
-  text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
-  letter-spacing: 10px;
+  display: inline;
 }
 
-.nav li{
-  padding-left: 20px;
-  padding-right: 20px;
+.nav a{
+  padding-right: 1em;
+  color:black;
 }
 
 .nav {
-  font-size = 15px;
-  font-family: 'Cabin';
+  font-size: 15px;
+  font-family: 'Raleway';
   margin: 0 auto;
-  width: 400px;
-  height: 100px;
-  text-align: center;
+  text-align: left;
+  padding-bottom:50px;
 }
 
 .bannercontainer {
-  display:inline-block;
-  height:200px;
-  margin: 0 auto;
+  padding-top: 50px;
 }
 
 .huechange {

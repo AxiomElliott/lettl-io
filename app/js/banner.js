@@ -68,7 +68,7 @@ angular.module('SampleApp').controller('bannerController', ['$scope','$window','
 
   $scope.getCharStyling = function(index){
     return $scope.fasttransition ?
-      {'letter-spacing': '0px', 'font-family':'Lobster', 'transition': 0.5 + 's ease'} :
+      {'letter-spacing': '0px', 'font-family':'Bitter', 'transition': 0.5 + 's ease'} :
       {'font-family':'Courier', 'width': charspacing + 'px', 'left': (index * charspacing) + 'px', 'transition': 4 + 's ease'};
   }
 

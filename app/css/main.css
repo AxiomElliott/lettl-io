@@ -1,3 +1,17 @@
 body {
-  text-align: center;
+  width:1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Bitter', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  background-image: -webkit-linear-gradient(92deg,#2672f4,#3ae0fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 15px;
 }
