@@ -3,10 +3,6 @@
 }
 
 .banner {
-  color: #f35626;
-  background-image: -webkit-linear-gradient(92deg,#2672f4,#3ae0fe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-family: 'Bitter', Helvetica, Arial, sans-serif;
   font-size: 3em;
   display: inline;

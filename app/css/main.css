@@ -18,9 +18,6 @@ body {
 h1 {
   font-family: 'Bitter', Helvetica, Arial, sans-serif;
   font-size: 2em;
-  background-image: -webkit-linear-gradient(92deg,#2672f4,#3ae0fe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -64,6 +61,39 @@ figcaption {
 .content {
   width:600px;
   margin: 0 auto;
+}
+
+.contentcentered {
+  text-align: center;
+}
+
+.boldcontent, h1, i {
+  background-image: -webkit-linear-gradient(92deg,#2672f4,#3ae0fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.paddingbottom {
+  padding-bottom: 2em;
+}
+
+.clearfix:after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.contactdisplay {
+  width: 50%;
+  float:left;
+}
+
+@media only screen and (max-device-width: 640px) {
+	.contactdisplay {
+		width:100%;
+    float: none;
+	}
 }
 
 @media only screen and (max-device-width: 640px) {

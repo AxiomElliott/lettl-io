@@ -81,11 +81,11 @@ gulp.task('copy-html-files', function() {
 
 gulp.task('copy-images', function() {
   gulp.src('./app/img/*.*')
-  .pipe(minifyImg({
-    progressive:true,
-    svgoPlugins:[{removeViewBox: false}],
-    use: [minjpeg()]
-  }))
+  // .pipe(minifyImg({
+  //   progressive:true,
+  //   svgoPlugins:[{removeViewBox: false}],
+  //   use: [minjpeg()]
+  // }))
   .pipe(gulp.dest('dist/img/'));
 })
 
