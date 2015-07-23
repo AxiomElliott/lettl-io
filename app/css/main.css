@@ -1,11 +1,23 @@
+html {
+  font-size: 15px;
+}
+
 body {
   width:1000px;
   margin: 0 auto;
 }
 
+@media only screen and (max-device-width: 640px) {
+	body{
+		width:100%;
+    padding-left: 1em;
+    padding-right: 1em;
+	}
+}
+
 h1 {
   font-family: 'Bitter', Helvetica, Arial, sans-serif;
-  font-size: 30px;
+  font-size: 2em;
   background-image: -webkit-linear-gradient(92deg,#2672f4,#3ae0fe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -13,5 +25,72 @@ h1 {
 
 p {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 1em;
+}
+
+@media only screen and (max-device-width: 640px) {
+	p {
+    font-size: 1.2em;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+figcaption {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  color: #BDBDBD;
+  padding-bottom: 2em;
+}
+
+.footer {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  color: #BDBDBD;
+  border-top: 1px solid #BDBDBD;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-top: 2em;
+}
+
+.content {
+  width:600px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-device-width: 640px) {
+	.content {
+		width:100%;
+	}
+}
+
+.inlineimage {
+  width:133.5%;
+}
+
+@media only screen and (max-device-width: 640px) {
+	.inlineimage {
+		width: 100%;
+	}
+}
+
+.heading {
+  position: absolute;
+  margin: 0px;
+  height: 1.5em;
+}
+
+@media only screen and (max-device-width: 640px) {
+	.heading {
+		font-size: 1.5em;
+    position: relative;
+	}
 }

@@ -9,12 +9,17 @@ angular.module('SampleApp', ['ngRoute'])
       //routes
       $routeProvider
         .when("/", {
-          templateUrl:"./partials/home.html",
-          controller:"HomeController"
+             templateUrl:"./partials/home.html"
+          // controller:"HomeController"
+        })
+        .when("/blog", {
+          templateUrl:"./partials/blog.html"
+        })
+        .when("/projects", {
+          templateUrl:"./partials/projects.html"
         })
         .when("/contact", {
-          templateUrl:"./partials/contact.html",
-          controller:"ContactController"
+          templateUrl:"./partials/contact.html"
         })
         .otherwise({
           redirectTo: '/'
@@ -25,19 +30,22 @@ angular.module('SampleApp', ['ngRoute'])
   ]);
 
 
-  // home controller
-  angular.module('SampleApp').controller('HomeController', [
-    '$scope',
-    function($scope) {
-      $scope.test = "Testing ※ Hello";
-    }
-  ]);
+  // // home controller
+  // angular.module('SampleApp').controller('HomeController', [
+  //   '$scope',
+  //   function($scope) {
+  //     $scope.content = "Testing ※ Hello";
+  //   }
+  // ]);
 
-  // contact controller
-  angular.module('SampleApp').controller('ContactController', [
-    '$scope',
-    function($scope) {
-      $scope.test = "Contact Me!";
-    }
-  ]);
+  // // contact controller
+  // angular.module('SampleApp').controller('ContactController', [
+  //   '$scope',
+  //   function($scope) {
+  //     $scope.content = "Contact Me!";
+  //   }
+  // ]);
 };
+mainjs();
+bannerjs();
+angular.bootstrap(document,['SampleApp']);

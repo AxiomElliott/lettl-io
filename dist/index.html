@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="SampleApp" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +8,20 @@
     <meta name="author" content="Elliott Thompson">
     <base href="/">
     <title>Elliott Thompson</title>
-
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="js/vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="js/vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="js/vendor/animate.css/animate.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/home.css" /> -->
   </head>
   <body>
     <div ng-include="'partials/banner.html'"></div>
-    <div class="container">
-      <div ng-view></div>
-    </div>
-      <script src="bower_components/jquery/dist/jquery.js"></script>
-      <script src="bower_components/angular/angular.js"></script>
-      <script src="bower_components/angular-route/angular-route.js"></script>
-      <script src="bower_components/angular-animate/angular-animate.js"></script>
-      <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-      <script src="js/main.js"></script>
-      <script src="js/banner.js"></script>
+    <div ng-view></div>
+    <div class="footer">&#169; 2015 Elliott Thompson, unless otherwise noted</div>
+    <link rel="stylesheet" href="css/bundle.min.css" />
+    <script src="js/bundle.min.js"></script>
   </body>
 </html>
