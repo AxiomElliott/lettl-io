@@ -27,32 +27,26 @@ angular.module('SampleApp', ['ngRoute'])
 
         $locationProvider.html5Mode(true);
     }
-  ]);
-
-//   angular.module('SampleApp').controller('rainbowCtrl', function($scope){
-//     $scope.val = {
-//         initialValue : 50
-//     }
-// });
+  ])
+  .run(['$rootScope','$interval',function($rootScope, $interval) {
+      $rootScope.textColourRotation = 0;
+      var duration = 60000;
+      var maxRotation = 360;
+      var updateLength = duration / maxRotation;
+      $rootScope.transitionTimer = $interval(function() {
+        $rootScope.textColourRotation += 1;
+        if ($rootScope.textColourRotation > maxRotation) {
+          $rootScope.textColourRotation = 0;
+        }
+      }, updateLength);
+  }]);
 
   angular.module('SampleApp').directive('ngRainbow', function() {
   return {
-    // compile: function(el) {
-    //   el.removeAttr('ng-rainbow');
-    //   el.attr('style', 'font-size: 60px');
-    // },
-    controller: ['$scope', '$timeout', function($scope, $timeout) {
-      $scope.val = 20;
-      $timeout(function() {
-        $scope.val = 60;
-      }, 5000);
-    }],
-    scope: { val: '=' },
     link: function(scope, iElement, iAttrs) {
-        // iAttrs.$set('style','font-size: ' + scope.val + 'px');
-        scope.$watch('val', function(value){
-          iAttrs.$set('style','font-size: ' + value + 'px');
-        })
+      scope.$watch('textColourRotation', function(value){
+        iAttrs.$set('style','-webkit-filter: hue-rotate(' + value + 'deg)');
+      })
     }
   }
 });
