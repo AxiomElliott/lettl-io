@@ -29,6 +29,7 @@ angular.module('SampleApp', ['ngRoute'])
     }
   ])
   .run(['$rootScope','$interval',function($rootScope, $interval) {
+    // randomise the colour rotation
       $rootScope.textColourRotation = Math.floor( Math.random() * 360 + 1 );
       var duration = 60000;
       var maxRotation = 360;
