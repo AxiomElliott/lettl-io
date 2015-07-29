@@ -87,6 +87,7 @@ figcaption {
 .contactdisplay {
   width: 50%;
   float:left;
+  padding-bottom: 70px;
 }
 
 @media only screen and (max-device-width: 640px) {
