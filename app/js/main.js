@@ -12,8 +12,8 @@ angular.module('SampleApp', ['ngRoute'])
              templateUrl:"./partials/home.html"
           // controller:"HomeController"
         })
-        .when("/blog", {
-          templateUrl:"./partials/blog.html"
+        .when("/feed", {
+          templateUrl:"./partials/feed.html"
         })
         .when("/projects", {
           templateUrl:"./partials/projects.html"
